@@ -14,6 +14,7 @@ public class HelloController {
         model.addAttribute("data", "hello!!");
 
         // controller에서 return 값으로 문자를 반환하면 viewResolver가 화면을 찾아서 처리
+        // resources:templates/ + {ViewName} + .html
         return "hello"; // hello.html로 연결
     }
 
