@@ -5,8 +5,6 @@ public class Member {
     private Long id;
     private String name;
 
-    // Getter Setter => Window: Alt + Ins
-
     public Long getId() {
         return id;
     }
@@ -22,4 +20,5 @@ public class Member {
     public void setName(String name) {
         this.name = name;
     }
+
 }

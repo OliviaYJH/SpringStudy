@@ -30,8 +30,8 @@ public class MemoryMemberRepository implements MemberRepository{
 
     @Override
     public List<Member> findAll() {
-        return new ArrayList<>(store.values()); // store map의 values(Memeber)들 반환
-    }
+        return new ArrayList<>(store.values());
+    } // store map의 values(Memeber)들 반환
 
     public void clearStore(){
         store.clear(); // 비움

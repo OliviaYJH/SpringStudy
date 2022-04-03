@@ -36,15 +36,13 @@ class MemoryMemberRepositoryTest {
         member1.setName("spring1");
         repository.save(member1);
 
-        Member member2 = new Member(); // shift + F6 => 변수명 한 번에 변경하기
+        Member member2 = new Member();
         member2.setName("spring2");
         repository.save(member2);
-
 
         Member result = repository.findByName("spring1").get();
 
         Assertions.assertThat(result).isEqualTo(member1);
-
     }
 
     @Test
